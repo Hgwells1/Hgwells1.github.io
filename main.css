@@ -186,6 +186,20 @@ background-size:100% 100%;
 -webkit-box-shadow: inset 0 0 10px #000000;
 box-shadow:         inset 0 0 10px #000000;
 }
+#Buttons {
+height:12%;
+width:100%;
+float:left;
+border:5%;
+}
+#but {
+background-image:url("Resources/button.png");
+background-size:100% 100%;
+background-repeat:none;
+height:90%;
+width:32%;
+margin-left:1%;
+}
 #inv {
 height:60%;
 width:90%;
@@ -198,7 +212,21 @@ width:70%;
 margin-left:15%;
 margin-top:1%;
 }
-
+#footer {
+height:15%;
+width:95%;
+margin-top:6.5%;
+margin-left:2.5%;
+background: linear-gradient(to Bottom, #E2E7E9, #69828B);
+z-index:1000;
+border-radius: 1% 1%;
+}
+p {
+text-align:right;
+padding-top:6%;
+padding-right:1%;
+color: black;
+}
 h3 {
 text-align:center;
 }
