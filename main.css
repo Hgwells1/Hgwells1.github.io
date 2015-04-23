@@ -128,12 +128,12 @@ min-width:100%;
 }
 
 #content {
-height:100%;
+height:99%;
 width:95%;
 margin-left:2.5%;
 background-image:url("Resources/back.jpg");
 background-size:100% 100%;
-overflow:hidden;4
+overflow:hidden;
 background-repeat:none;
 }
 #title {
@@ -143,12 +143,11 @@ height:5%;
 width:100%;
 float:left;
 margin-top:1%;
+margin-bottom:1%;
 }
-
-
 #threebox {
 height:50%;
-margin-top:10%;
+margin-top:1%;
 }
 #Box1{
 height:100%;
@@ -186,20 +185,6 @@ background-size:100% 100%;
 -webkit-box-shadow: inset 0 0 10px #000000;
 box-shadow:         inset 0 0 10px #000000;
 }
-#Buttons {
-height:12%;
-width:100%;
-float:left;
-border:5%;
-}
-#but {
-background-image:url("Resources/button.png");
-background-size:100% 100%;
-background-repeat:none;
-height:90%;
-width:32%;
-margin-left:1%;
-}
 #inv {
 height:60%;
 width:90%;
@@ -212,21 +197,78 @@ width:70%;
 margin-left:15%;
 margin-top:1%;
 }
-#footer {
-height:15%;
-width:95%;
-margin-top:6.5%;
-margin-left:2.5%;
-background: linear-gradient(to Bottom, #E2E7E9, #69828B);
-z-index:1000;
-border-radius: 1% 1%;
-}
-p {
-text-align:right;
-padding-top:6%;
-padding-right:1%;
-color: black;
-}
+
 h3 {
+text-align:center;
+}
+
+#swarecont {
+height:85%;
+width:90%;
+margin-left:5%;
+float:left;
+margin-top:2.5%;
+background-image: url("Resources/bback2.png"); 
+border-radius:5%;
+
+}
+#swarecont:hover {
+overflow:scroll;
+width:90.75%;
+height:87%;
+overflow-x:hidden;
+}
+#sware {
+height:30%;
+width:92%;
+margin-top:2%;
+margin-left:2.5%;
+background-image: url("Resources/bback3.jpg"); 
+background-size:100% 100%;
+background-repeat:none;
+position:relative;
+padding-right:0;
+border-radius:2.5%;
+}
+#links {
+height:98%;
+width:20%;
+margin:1%;
+float:left;
+}
+#links img {
+height: 90%;
+width:95%;
+margin-top:1%;
+margin-left:1%;
+}
+
+#desc {
+height:98%;
+width:75%;
+margin-left:2.5%;
+margin-top:1%;
+float:left;
+color:green;
+text-decoration:none;
+}
+#desc a {
+text-decoration:none;
+color:black;
+margin-left: 46%;
+}
+#desc a:visited {
+text-decoration:none;
+color:black;
+overflow:hidden;
+
+}
+#desc a:hover {
+text-decoration:none;
+color:green;
+}
+
+pre {
+margin-top:2%;
 text-align:center;
 }
