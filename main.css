@@ -143,11 +143,11 @@ height:5%;
 width:100%;
 float:left;
 margin-top:1%;
-margin-bottom:2.5%;
+margin-bottom:1%;
 }
 #threebox {
 height:50%;
-margin-top:10%;
+margin-top:1%;
 }
 #Box1{
 height:100%;
@@ -271,4 +271,39 @@ color:green;
 pre {
 margin-top:2%;
 text-align:center;
+}
+
+#hware {
+margin-left:40%;
+margin-top:10%;
+}
+#services {
+height:98%;
+Width:100%;
+text-align: center;
+margin-left: 1%;
+margin-top:1%;
+}
+#services ul {
+height:15%;
+}
+#services li {
+height:100%;
+width:30%;
+margin-left:1%;
+margin-top:1%;
+list-style-type:none;
+float:left;
+background-image:url("Resources/bback3.jpg");
+border-radius:5%;
+}
+#swarecon {
+height:85%;
+width:90%;
+margin-left:5%;
+float:left;
+margin-top:4%;
+background-image: url("Resources/bback2.png"); 
+border-radius:5%;
+
 }
