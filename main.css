@@ -271,6 +271,8 @@ color:green;
 pre {
 margin-top:2%;
 text-align:center;
+text-align: justify;
+text-justify: auto;
 }
 
 #hware {
