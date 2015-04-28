@@ -329,6 +329,7 @@ text-shadow:1px 1px #888;
 #foot {
 height:100%;
 width:20%;
+float:right;
 margin-right:1%;
 text-align:right;
 }
