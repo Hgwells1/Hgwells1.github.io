@@ -324,11 +324,12 @@ background-color:#aaa;
 border-radius: 5px;
 color:#fff;
 text-shadow:1px 1px #888;
-text-align:right;
+
 }
 
 #footer p {
 float:left;
 margin-right:1%;
-margin-top:1%;
+margin-top:3%;
+text-align:justify;
 }
