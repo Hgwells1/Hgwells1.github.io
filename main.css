@@ -315,3 +315,9 @@ border-radius:5%;
 text-align: justify;
 text-justify: auto;
 }
+#footer {
+height:10%;
+width:95;
+margin-left:25%;
+bckground-color:#aaa
+}
