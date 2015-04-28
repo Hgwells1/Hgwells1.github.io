@@ -270,12 +270,15 @@ color:green;
 }
 
 p {
-margin-top:5%;
+margin-top:2%;
 text-align:center;
 text-align: justify;
 text-justify: auto;
+}
+li {
+margin-top:35%;
 color:green;
-
+text-align:center;
 }
 
 #hware {
