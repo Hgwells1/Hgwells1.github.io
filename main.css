@@ -315,6 +315,9 @@ border-radius:5%;
 text-align: justify;
 text-justify: auto;
 }
+#swarecon li {
+	margin-top:5%;
+}
 #footer {
 height:12%;
 margin-top:7%;
