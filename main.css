@@ -326,6 +326,9 @@ color:#fff;
 text-shadow:1px 1px #888;
 
 }
+#foot p {
+	margin-top:-3;
+}
 #foot {
 height:100%;
 width:20%;
