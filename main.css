@@ -321,4 +321,7 @@ margin-top:5%;
 width:100%;
 background-color:#aaa;
 border-radius:20%,0%,0%,0%;
+color:#fff;
+text-shadow:1px 1px #888;
+text-align:right;
 }
