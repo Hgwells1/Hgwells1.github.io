@@ -333,3 +333,9 @@ float:right;
 margin-right:1%;
 text-align:right;
 }
+#footL {
+height:100%;
+width:20%;
+float:left;
+text-align:left;	
+}
