@@ -325,3 +325,7 @@ color:#fff;
 text-shadow:1px 1px #888;
 text-align:right;
 }
+
+#footer p {
+float:right;
+}
