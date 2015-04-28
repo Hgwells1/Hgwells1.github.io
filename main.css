@@ -325,9 +325,9 @@ border-radius: 5px;
 color:#fff;
 text-shadow:1px 1px #888;
 text-align:right;
-padding:-1%;
 }
 
 #footer p {
-float:right;
+float:right
+margin-right:1%;
 }
