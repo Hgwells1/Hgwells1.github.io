@@ -326,9 +326,9 @@ color:#fff;
 text-shadow:1px 1px #888;
 
 }
-
-#footer p {
+#foot {
+height:100%;
+width:20%;
 margin-right:1%;
-margin-top:3%;
-text-align:justify;
+text-align:right;
 }
