@@ -328,6 +328,7 @@ text-align:right;
 }
 
 #footer p {
+clearfix:auto;
 float:right;
 margin-right:1%;
 margin-top:1%;
