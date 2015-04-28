@@ -316,8 +316,9 @@ text-align: justify;
 text-justify: auto;
 }
 #footer {
-height:10%;
+height:20%;
 margin-top:5%;
 width:100%;
 background-color:#aaa
+border-radius:20%,0%,0%,0%;
 }
