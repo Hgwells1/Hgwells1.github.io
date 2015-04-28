@@ -2,6 +2,7 @@ body{
 height:100%;
 background-image:url("Resources/bback.png");
 font-family:Trebuchet MS, Helvetica, sans-serif;
+
 overflow-x:hidden;
 background-repeat:none;
 background-size:100% 100%;
@@ -269,10 +270,12 @@ color:green;
 }
 
 p {
-margin-top:2%;
+margin-top:5%;
 text-align:center;
 text-align: justify;
 text-justify: auto;
+color:green;
+
 }
 
 #hware {
