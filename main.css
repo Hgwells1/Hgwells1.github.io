@@ -317,6 +317,7 @@ text-justify: auto;
 }
 #footer {
 height:10%;
+margin-top:5%;
 width:100%;
 background-color:#aaa
 }
