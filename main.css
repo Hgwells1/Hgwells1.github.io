@@ -320,7 +320,7 @@ text-justify: auto;
 }
 #footer {
 height:12%;
-margin-top:7%;
+margin-top:5%;
 margin-left:0.5%;
 width:99%;
 background-color:#aaa;
@@ -333,7 +333,7 @@ text-shadow:1px 1px #888;
 	margin:0;
 }
 #foot {
-margin-top:2%;
+margin-top:1%;
 height:60%;
 width:20%;
 float:right;
@@ -345,7 +345,7 @@ text-align:right;
 #footL {
 height:20%;
 width:20%;
-margin-top:3%;
+margin-top:2%;
 margin-left:1%;
 float:left;
 text-align:left;	
