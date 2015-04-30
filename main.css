@@ -1,6 +1,12 @@
 body{
 height:100%;
-background-image:url("Resources/bback.png");
+background: repeating-linear-gradient(
+  -55deg,
+  ##CECECE,
+  ##CECECE 10px,
+  #333 10px,
+  #333 20px
+);
 font-family:Trebuchet MS, Helvetica, sans-serif;
 
 overflow-x:hidden;
