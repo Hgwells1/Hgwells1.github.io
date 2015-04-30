@@ -3,8 +3,6 @@ height:100%;
 background-image: url("http://s11.postimg.org/o3qsobo33/stripbk.png");
 font-family:Trebuchet MS, Helvetica, sans-serif;
 overflow-x:hidden;
-background-repeat:none;
-background-size:100% 100%;
 }
 ::-webkit-scrollbar {
     width: 12px;
