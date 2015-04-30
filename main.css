@@ -1,6 +1,6 @@
 body{
 height:100%;
-background-image: repeating-linear-gradient(45deg, gray 0px, gray 25px, transparent 25px, transparent 50px, gray 50px);
+background-image: repeating-linear-gradient(50deg, gray 0px, gray 25px, transparent 25px, transparent 50px, gray 50px);
 font-family:Trebuchet MS, Helvetica, sans-serif;
 overflow-x:hidden;
 }
