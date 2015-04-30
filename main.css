@@ -1,6 +1,6 @@
 body{
 height:100%;
-background: repeating-linear-gradient(
+background-image: repeating-linear-gradient(
   -55deg,
   ##CECECE,
   ##CECECE 10px,
