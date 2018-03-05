@@ -1,0 +1,334 @@
+<div class="container clearfix">
+    <div style="padding-top: 80px;">
+
+        <div style="text-align: center;">
+            <a href="index.php?store"
+               class="button button-3d button-large button-rounded <?php if ($_GET['store'] == "") {
+                   echo 'button-green';
+               } else {
+                   echo 'button-teal';
+               } ?>">One Time Ranks</a>
+               <a href="index.php?store=one"
+               class="button button-3d button-large button-rounded <?php if ($_GET['store'] == "one") {
+                   echo 'button-green';
+               } else {
+                   echo 'button-teal';
+               } ?>">Monthly Ranks</a>
+            <a href="index.php?store=perks"
+               class="button button-3d button-large button-rounded <?php if ($_GET['store'] == "perks") {
+                   echo 'button-green';
+               } else {
+                   echo 'button-teal';
+               } ?>">Perks</a>
+            <a href="index.php?store=extras"
+               class="button button-3d button-large button-rounded <?php if ($_GET['store'] == "extras") {
+                   echo 'button-green';
+               } else {
+                   echo 'button-teal';
+               } ?>">Extras</a>
+        </div>
+
+        <div class="divider divider-short divider-center"><i class="icon-bolt2"></i></div>
+
+        <?php
+        if ($_GET['store'] == "") {
+            ?>
+            <div class="modal fade rank-comparison" tabindex="-1" role="dialog"  aria-hidden="true" style="display: none;">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-body">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                <h4 class="modal-title" id="myModalLabel">Rank Comparison</h4>
+                            </div>
+                            <div class="modal-body">
+                                <div class="table-responsive">
+
+                                    <table class="table table-hover table-comparison nobottommargin">
+                                        <thead>
+                                        <tr>
+                                            <th>&nbsp;</th>
+                                            <th>Bronze</th>
+                                            <th>Silver</th>
+                                            <th>Gold</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td>Instances per Modpack</td>
+                                            <td>3</td>
+                                            <td>5</td>
+                                            <td>10</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Members per Instance</td>
+                                            <td>5</td>
+                                            <td>8</td>
+                                            <td>12</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Homes per Instance</td>
+                                            <td>5</td>
+                                            <td>8</td>
+                                            <td>15</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Exclusive Crate Keys (per month)</td>
+                                            <td>2</td>
+                                            <td>5</td>
+                                            <td>10</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Premium Shard Access</td>
+                                            <td><i class="icon-ok"></i></td>
+                                            <td><i class="icon-ok"></i></td>
+                                            <td><i class="icon-ok"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Private Shard Access</td>
+                                            <td><i class="icon-remove"></i></td>
+                                            <td><i class="icon-remove"></i></td>
+                                            <td><i class="icon-ok"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Command: /nick [name]</td>
+                                            <td><i class="icon-ok"></i></td>
+                                            <td><i class="icon-ok"></i></td>
+                                            <td><i class="icon-ok"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Command: /hat</td>
+                                            <td><i class="icon-ok"></i></td>
+                                            <td><i class="icon-ok"></i></td>
+                                            <td><i class="icon-ok"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Command: /heal</td>
+                                            <td><i class="icon-remove"></i></td>
+                                            <td><i class="icon-ok"></i></td>
+                                            <td><i class="icon-ok"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Command: /feed</td>
+                                            <td><i class="icon-remove"></i></td>
+                                            <td><i class="icon-ok"></i></td>
+                                            <td><i class="icon-ok"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Command: /clearinventory</td>
+                                            <td><i class="icon-remove"></i></td>
+                                            <td><i class="icon-remove"></i></td>
+                                            <td><i class="icon-ok"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Command: /fly</td>
+                                            <td><i class="icon-remove"></i></td>
+                                            <td><i class="icon-remove"></i></td>
+                                            <td><i class="icon-ok"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Price (per month)</td>
+                                            <td>£7.99</td>
+                                            <td>£13.99</td>
+                                            <td>£19.99</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pricing bottommargin clearfix">
+                <div class="col-md-6" style="text-align: center; margin-bottom: 50px;">
+                    <button class="button button-3d button-rounded button-desc center" data-toggle="modal" data-target=".rank-comparison">
+                        See Rank Comparison
+                        <span>All the details!</span>
+                    </button>
+                </div>
+                <div class="col-md-6" style="text-align: center; margin-bottom: 50px;">
+                    <a href="https://piston-powered.buycraft.net/category/1018807" class="button button-3d button-rounded button-green button-desc center">
+                        More than one month?
+                        <span>View these discounted prices!</span>
+                    </a>
+                </div>
+                <div class="col-sm-4">
+
+                    <div class="pricing-box">
+                        <div class="pricing-title">
+                            <h3 style="color:#cd7f32;">Bronze</h3>
+                        </div>
+                        <div class="pricing-price">
+                            <span class="price-unit">&pound;</span>7.99<span class="price-tenure">/month</span>
+                        </div>
+<!--                        <div class="pricing-features">
+                            <ul>
+                                <li>Set a nickname</li>
+                                <li><strong>3 Instances</strong> per Modpack</li>
+                                <li><strong>5 Members</strong> per Instance</li>
+                                <li><strong>Premium</strong> Shard Access</li>
+                                <li><strong>2 Reward Crate Keys</strong> /mo</li>
+                            </ul>
+                        </div>-->
+                        <div class="pricing-action">
+                            <a href="https://piston-powered.buycraft.net/checkout/packages/add/2610687/add" class="button button-3d button-rounded button-green btn-block">
+                                Purchase
+                            </a>
+                            <a href="https://piston-powered.buycraft.net/checkout/packages/add/2610687/subscription" class="button button-3d button-rounded button-aqua btn-block">
+                                Subscribe
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-sm-4">
+
+                    <div class="pricing-box best-price">
+                        <div class="pricing-title">
+                            <h3 style="color:#FFDF00;">Gold</h3>
+                            <span>Best Value</span>
+                        </div>
+                        <div class="pricing-price">
+                            <span class="price-unit">&pound;</span>19.99<span class="price-tenure">/month</span>
+                        </div>
+<!--                        <div class="pricing-features">
+                            <ul>
+                                <li>Set a nickname</li>
+                                <li>Heal yourself</li>
+                                <li>Feed yourself</li>
+                                <li>Free flight</li>
+                                <li><strong>10 Instances</strong> per Modpack</li>
+                                <li><strong>12 Members</strong> per Instance</li>
+                                <li><strong>Premium</strong> Shard Access</li>
+                                <li><strong>Private</strong> Shard Access</li>
+                                <li><strong>10 Reward Crate Keys</strong> /mo</li>
+                            </ul>
+                        </div>-->
+                        <div class="pricing-action">
+                                <a href="https://piston-powered.buycraft.net/checkout/packages/add/2610689/add" class="button button-3d button-rounded button-green btn-block">
+                                    Purchase
+                                </a>
+                                <a href="https://piston-powered.buycraft.net/checkout/packages/add/2610689/subscription" class="button button-3d button-rounded button-aqua btn-block">
+                                    Subscribe
+                                </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-4">
+
+                    <div class="pricing-box">
+                        <div class="pricing-title">
+                            <h3 style="color:#C0C0C0;">Silver</h3>
+
+                        </div>
+                        <div class="pricing-price">
+                            <span class="price-unit">&pound;</span>13.99<span class="price-tenure">/month</span>
+                        </div>
+<!--                        <div class="pricing-features">
+                            <ul>
+                                <li>Set a nickname</li>
+                                <li>Heal yourself</li>
+                                <li>Feed yourself</li>
+                                <li><strong>5 Instances</strong> per Modpack</li>
+                                <li><strong>8 Members</strong> per Instance</li>
+                                <li><strong>Premium Shard Access</strong></li>
+                                <li><strong>5 Reward Crate Keys</strong> /mo</li>
+                            </ul>
+                        </div>-->
+                        <div class="pricing-action">
+                            <a href="https://piston-powered.buycraft.net/checkout/packages/add/2610688/add" class="button button-3d button-rounded button-green btn-block">
+                                Purchase
+                            </a>
+                            <a href="https://piston-powered.buycraft.net/checkout/packages/add/2610688/subscription" class="button button-3d button-rounded button-aqua btn-block">
+                                Subscribe
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <?php
+        } else if ($_GET['store'] == "one") {
+            ?>
+            <h1 style="text-align: center;">Monthly ranks coming soon!</h1>
+
+
+
+
+            <?php
+        } else if ($_GET['store'] == "perks") {
+            ?>
+            <h1 style="text-align: center;">Coming soon!</h1>
+            <!-- perks -->
+            <?php
+        } else if ($_GET['store'] == "extras") {
+            ?>
+            <!-- extras -->
+            <div class="fancy-title title-dotted-border title-center">
+                <h3>Exclusive Crates</h3>
+            </div>
+            <div class="pricing pricing-4 bottommargin clearfix">
+
+                <div class="pricing-box pricing-minimal">
+                    <div class="pricing-title">
+                        <h3>5 Keys</h3>
+                    </div>
+                    <div class="pricing-price">
+                        <span class="price-unit">£</span>5<span class="price-tenure"></span>
+                    </div>
+                    <div class="pricing-action">
+                        <a href="https://piston-powered.buycraft.net/checkout/packages/add/2642737/single" class="button button-3d button-rounded button-green btn-block">Purchase</a>
+                    </div>
+                </div>
+
+                <div class="pricing-box pricing-minimal">
+                    <div class="pricing-title">
+                        <h3>10 Keys</h3>
+                    </div>
+                    <div class="pricing-price">
+                        <span class="price-unit">£</span>8<span class="price-tenure"></span>
+                    </div>
+                    <div class="pricing-action">
+                        <a href="https://piston-powered.buycraft.net/checkout/packages/add/2642739/single" class="button button-3d button-rounded button-green btn-block">Purchase</a>
+                    </div>
+                </div>
+
+                <div class="pricing-box pricing-minimal">
+                    <div class="pricing-title">
+                        <h3>25 Keys</h3>
+                    </div>
+                    <div class="pricing-price">
+                        <span class="price-unit">£</span>18<span class="price-tenure"></span>
+                    </div>
+                    <div class="pricing-action">
+                        <a href="https://piston-powered.buycraft.net/checkout/packages/add/2642740/single" class="button button-3d button-rounded button-green btn-block">Purchase</a>
+                    </div>
+                </div>
+
+                <div class="pricing-box pricing-minimal">
+                    <div class="pricing-title">
+                        <h3>50 Keys</h3>
+                    </div>
+                    <div class="pricing-price">
+                        <span class="price-unit">£</span>28<span class="price-tenure"></span>
+                    </div>
+                    <div class="pricing-action">
+                        <a href="https://piston-powered.buycraft.net/checkout/packages/add/2642741/single" class="button button-3d button-rounded button-green btn-block">Purchase</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <?php
+        }
+        ?>
+
+
+    </div>
+</div>
